@@ -1,0 +1,117 @@
+{
+  "id": "emt-cardiac-electrical-system",
+  "title": "EMT Cardiac Electrical System",
+  "description": "A ten-question knowledge check on the heart's electrical conduction system and basic ECG terminology.",
+  "questions": [
+    {
+      "id": "primary-pacemaker",
+      "question": "Which structure normally serves as the heart's primary pacemaker?",
+      "answers": {
+        "a": "Sinoatrial (SA) node",
+        "b": "Atrioventricular (AV) node",
+        "c": "Bundle of His",
+        "d": "Purkinje fibers"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "id": "sa-node-location",
+      "question": "In which chamber is the sinoatrial (SA) node located?",
+      "answers": {
+        "a": "Left ventricle",
+        "b": "Right atrium",
+        "c": "Left atrium",
+        "d": "Right ventricle"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "id": "av-node-purpose",
+      "question": "What is the primary purpose of the electrical delay at the AV node?",
+      "answers": {
+        "a": "To allow the ventricles time to fill before they contract",
+        "b": "To cause atrial repolarization",
+        "c": "To increase the heart's oxygen demand",
+        "d": "To start ventricular repolarization"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "id": "av-junction-rate",
+      "question": "What is the typical intrinsic rate of the AV junction when it becomes the pacemaker?",
+      "answers": {
+        "a": "20 to 40 beats per minute",
+        "b": "40 to 60 beats per minute",
+        "c": "60 to 100 beats per minute",
+        "d": "100 to 140 beats per minute"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "id": "purkinje-rate",
+      "question": "What is the typical intrinsic rate of the ventricular conduction system, including the Purkinje fibers?",
+      "answers": {
+        "a": "20 to 40 beats per minute",
+        "b": "40 to 60 beats per minute",
+        "c": "60 to 100 beats per minute",
+        "d": "100 to 160 beats per minute"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "id": "p-wave",
+      "question": "What electrical event does the P wave represent on an ECG?",
+      "answers": {
+        "a": "Atrial depolarization",
+        "b": "Ventricular depolarization",
+        "c": "Atrial repolarization",
+        "d": "Ventricular repolarization"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "id": "qrs-complex",
+      "question": "What electrical event does the QRS complex represent on an ECG?",
+      "answers": {
+        "a": "Atrial depolarization",
+        "b": "Ventricular depolarization",
+        "c": "Atrial contraction only",
+        "d": "Ventricular repolarization"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "id": "t-wave",
+      "question": "What electrical event does the T wave usually represent on an ECG?",
+      "answers": {
+        "a": "Atrial depolarization",
+        "b": "Ventricular depolarization",
+        "c": "Ventricular repolarization",
+        "d": "AV nodal delay"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "id": "pr-interval",
+      "question": "The PR interval is measured from the beginning of which waveform to the beginning of which complex?",
+      "answers": {
+        "a": "Beginning of the P wave to beginning of the QRS complex",
+        "b": "Beginning of the QRS complex to end of the T wave",
+        "c": "End of the P wave to end of the QRS complex",
+        "d": "Beginning of the T wave to beginning of the next P wave"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "id": "conduction-pathway",
+      "question": "After leaving the AV node, which structure normally conducts the impulse into the interventricular septum before it divides into bundle branches?",
+      "answers": {
+        "a": "Bundle of His",
+        "b": "SA node",
+        "c": "Coronary sinus",
+        "d": "Papillary muscle"
+      },
+      "correctAnswer": "a"
+    }
+  ]
+}

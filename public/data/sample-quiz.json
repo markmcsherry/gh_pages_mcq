@@ -1,0 +1,40 @@
+{
+  "id": "sample-general-knowledge",
+  "title": "Sample General Knowledge Quiz",
+  "description": "A short quiz used to test the MCQ template.",
+  "questions": [
+    {
+      "id": "capital-of-france",
+      "question": "What is the capital of France?",
+      "answers": {
+        "a": "Madrid",
+        "b": "Paris",
+        "c": "Rome",
+        "d": "Berlin"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "id": "largest-ocean",
+      "question": "Which is the largest ocean on Earth?",
+      "answers": {
+        "a": "Atlantic Ocean",
+        "b": "Indian Ocean",
+        "c": "Pacific Ocean",
+        "d": "Arctic Ocean"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "id": "water-chemical-symbol",
+      "question": "What is the chemical formula for water?",
+      "answers": {
+        "a": "CO2",
+        "b": "H2O",
+        "c": "O2",
+        "d": "NaCl"
+      },
+      "correctAnswer": "b"
+    }
+  ]
+}
