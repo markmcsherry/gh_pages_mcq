@@ -18,10 +18,11 @@ The template will later be incorporated into a wider site that links to individu
 
 - Build a basic React quiz experience that can be exported as static files.
 - Load quiz content from a static JSON file, including through a relative URL.
-- Require the relative JSON file path in the page's `quiz` query parameter. When it is absent or invalid, show an instruction screen rather than a quiz.
+- Require a quiz identifier in the page's `quiz` query parameter. The application resolves it to `data/<identifier>.json`; when it is absent or invalid, show an instruction screen rather than a quiz.
 - Render each question with four selectable answers labelled `a`, `b`, `c`, and `d`.
 - Require exactly one correct answer per question in the quiz data.
 - Let users move back and forward through a quiz, retaining and changing their selections until submission.
+- Show a compact question navigator that identifies answered, unanswered, and current questions, and allows users to jump to any question before submission. On results, show a read-only map of correct, incorrect, and unanswered questions.
 - Allow a user to submit with unanswered questions; treat every unanswered question as incorrect.
 - Reveal the score only after quiz submission, then show a review of the questions answered incorrectly.
 - Lock answers after submission; users cannot return to the quiz to change them.
@@ -56,6 +57,8 @@ Each quiz is a JSON object with a stable identifier, display metadata, and a non
   "id": "sample-general-knowledge",
   "title": "Sample General Knowledge Quiz",
   "description": "A short quiz used to test the template.",
+  "randomizeQuestions": false,
+  "randomizeAnswers": false,
   "questions": [
     {
       "id": "capital-of-france",
@@ -79,11 +82,15 @@ Validation rules for the initial contract:
 - `question`, `answers`, and `correctAnswer` are required for every question.
 - `answers` contains exactly the keys `a`, `b`, `c`, and `d`.
 - `correctAnswer` is exactly one of `a`, `b`, `c`, or `d`.
+- `randomizeQuestions` is optional and defaults to `false`. When `true`, questions are shuffled once at the start of each attempt.
+- `randomizeAnswers` is optional and defaults to `false`. When `true`, answers are shuffled once per question at the start of each attempt.
+
+When answer randomisation is enabled, the visible `A` through `D` labels follow the displayed order. The underlying answer keys remain unchanged for scoring.
 
 ## Constraints
 
 - GitHub Pages hosts static files only. The initial product must not depend on a database, authentication service, server-side rendering, or custom API.
-- Quiz files should be deployed under `public/data/` and addressed by relative paths in the `quiz` query parameter so the app works under a GitHub Pages repository base path. For example, `?quiz=data/sample-quiz.json`.
+- Quiz files should be deployed under `public/data/`. The `quiz` parameter accepts lowercase, hyphen-separated identifiers and resolves them to relative static paths, so the app works under a GitHub Pages repository base path. For example, `?quiz=sample-quiz` resolves to `data/sample-quiz.json`.
 - The template must remain usable independently while the surrounding site framework is evaluated.
 - The interface must meet the experience and design requirements without requiring a parent-site theme or runtime service.
 
@@ -100,3 +107,5 @@ Validation rules for the initial contract:
 - Whether a quiz is selected from a URL parameter, route segment, or parent-site link.
 - Whether questions later need explanations, media, categories, or difficulty metadata.
 - How the selected parent-site framework will publish or embed the React template.
+
+See the [future features backlog](future-features.md) for prioritized future work and out-of-scope items.

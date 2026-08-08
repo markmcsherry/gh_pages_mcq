@@ -23,6 +23,7 @@ Quizzes are informal knowledge-reinforcement companions to podcasts or videos. S
 - Treat `docs/product.md` as the detailed product definition and source of truth for the initial quiz data contract.
 - Design responsive, accessible interfaces that work from mobile through desktop.
 - Support light and dark colour modes, defaulting to the user's system preference and allowing a user to change the mode for their current session.
+- When quiz randomisation is enabled, shuffle questions and answers once per attempt and preserve that order through navigation and results.
 - Keep answers private until quiz completion: users may navigate back and forward to revise or leave answers blank, but cannot change answers after submitting the quiz.
 
 ## Current Boundaries

@@ -2,6 +2,8 @@
   "id": "sample-general-knowledge",
   "title": "Sample General Knowledge Quiz",
   "description": "A short quiz used to test the MCQ template.",
+  "randomizeQuestions": true,
+  "randomizeAnswers": true,
   "questions": [
     {
       "id": "capital-of-france",

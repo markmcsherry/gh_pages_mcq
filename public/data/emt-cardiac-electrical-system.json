@@ -2,6 +2,8 @@
   "id": "emt-cardiac-electrical-system",
   "title": "EMT Cardiac Electrical System",
   "description": "A ten-question knowledge check on the heart's electrical conduction system and basic ECG terminology.",
+  "randomizeQuestions": false,
+  "randomizeAnswers": false,
   "questions": [
     {
       "id": "primary-pacemaker",
